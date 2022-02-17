@@ -1,0 +1,11 @@
+http post http://127.0.0.1:8000/api_token_auth/ username=lokesh password=lokesh123
+
+http post http://127.0.0.1:8000/api_token_auth/ username=lokesh@django password=python123
+
+http post http://127.0.0.1:8000/api_token_auth/ username=lokesh@restapi password=python123
+
+http post http://127.0.0.1:8000/products/ "Authorization: Token d1bcf9a5aea6e1b9301af4cde188795c572d5064"
+
+http post http://127.0.0.1:8000/products/ "Authorization: Token d1bcf9a5aea6e1b9301af4cde188795c572d5064" pid=1003 pname=bottle pcost=500.0 pmfdt=2022-02-16 pexpdt=2023-02-15
+
+http DELETE http://127.0.0.1:8000/products/1001 "Authorization: Token d1bcf9a5aea6e1b9301af4cde188795c572d5064"
